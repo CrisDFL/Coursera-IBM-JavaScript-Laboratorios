@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios sobre Marca de Lujo</title>
+</head>
+<body>
+    <h1>Bienvenido a los Comentarios sobre Productor de Marca de Lujo</h1>
+    <h2>Proporciona Tu Comentario</h2>
+    <label for="name">Nombre:</label>
+    <input type="text" name="name" id="name" placeholder="Tu Nombre" >
+    <label for="age">Edad:</label>
+    <input type="number" name="age" id="age" placeholder="Tu Edad" >
+    <label for="email">Correo Electronico:</label>
+    <input type="email" name="email" id="email" placeholder="Tu Correo Electronico" >
+    <label for="job">Trabajo:</label>
+    <input type="text" name="job" id="job" placeholder="Tu Trabajo" >
+    <label for="designation">Designacion:</label>
+    <input type="text" name="designation" id="designation" placeholder="Tu Designacion" >
+    <label for="productType">Tipo de Producto:</label>
+    <select name="productType" id="productType" >
+        <option value="perfume">Perfume</option>
+        <option value="cream">Crema</option>
+        <option value="oils">Aceites</option>
+    </select><br>
+    <label for="feedbacktext">Comentarios:</label>
+    <textarea name="feedbacktext" id="feedbackText" cols="30" rows="10" placeholder="Ingresa tus comentarios aqui" ></textarea><br>
+    <button id="submitBtn">Enviar Comentarios</button>
+    <hr>
+    <div id="userInfo" style="display: none;">
+        <h2>Informacion de Usuario:</h2>
+        <p>Nombre: <span id="userName"></span></p>
+        <p>Edad: <span id="userAge"></span></p>
+        <p>Correo Electrónico: <span id="userEmail"></span></p>
+        <p>Trabajo: <span id="userJob"></span></p>
+        <p>Designación: <span id="userDesignation"></span></p>
+        <p>Comentarios para <span id="userProductChoice"></span>: <span id="userFeedback"></span></p>
+      </div>
+
+<script src="./product_survey.js"></script>
+</body>
+</html>
